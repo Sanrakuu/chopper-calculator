@@ -104,7 +104,7 @@ const calculator = {
   },
 
   appendStringOperator(newChar) {
-    const lastChar = this.displayString.slice(-1);
+    const lastChar = this.displayString[this.displayString.length - 1];
     if (numberStrs.includes(lastChar) || lastChar === ")") {
       this.displayString += newChar;
       this.updateDisplay();
@@ -143,7 +143,7 @@ const calculator = {
       let result = evaluateExpressionTree(root);
 
       if (!isFinite(result)) this.displayString = "Error";
-      else this.displayString = result,toString();
+      else this.displayString = result.toString();
 
     } catch (err) {
       this.displayString = "Error";
