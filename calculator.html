@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chopper Pixel Calculator</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="calculator.css" />
+    <script src="calculator.js" defer></script> <!-- Defer here means that the script will be executed after the HTML is parsed -->
+  </head>
+  <body>
+    <div class="window">
+      <div class="titleBar">
+        <div class="windowTitle">Chopper's Pixel Calculator</div>
+        <div class="windowControls">
+          <div class="controlBtn closeBtn"></div>
+          <div class="controlBtn minimizeBtn"></div>
+          <div class="controlBtn maximizeBtn"></div>
+        </div>
+      </div>
+
+      <div class="windowContent">
+        <div class="spriteContainer">
+          <div class="dancingSprite"></div>
+        </div>
+
+        <div class="calculatorContainer">
+          <div class="displayContainer">
+            <span id="display">0</span>
+          </div>
+
+          <div class="buttonGrid">
+            <!-- Row 1 -->
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button operator">/</button>
+            <!-- Row 2 -->
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button operator">*</button>
+            <!-- Row 3 -->
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button operator">-</button>
+            <!-- Row 4 -->
+            <button class="button number">0</button>
+            <button class="button decimal">.</button>
+            <button class="button equals">=</button>
+            <button class="button operator">+</button>
+            <!-- Row 5 -->
+            <button class="button parenthesis">(</button>
+            <button class="button parenthesis">)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
